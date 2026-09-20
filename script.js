@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     revealElements.forEach((el) => revealObserver.observe(el));
 
-    // 3. EFECTO TILT PERSPECTIVA 3D PARA LA IMAGEN PRINCIPAL
+    // 3. EFECTO TILT PERSPECTIVA 3D
     const imageCard = document.querySelector('.image-card');
 
     if (imageCard) {
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
 
-            const rotateX = ((y - centerY) / centerY) * -6;
-            const rotateY = ((x - centerX) / centerX) * 6;
+            const rotateX = ((y - centerY) / centerY) * -5;
+            const rotateY = ((x - centerX) / centerX) * 5;
 
             imageCard.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
             imageCard.style.transition = 'transform 0.1s ease-out';
