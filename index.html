@@ -1,248 +1,219 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Lekraa — Engineering Portfolio</title>
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammed Lekraa // Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- SYSTEM LOADER -->
-    <div id="loader" class="loader-overlay">
-        <div class="loader-content">
-            <div class="loader-title">SYS_INIT // MOHAMMED LEKRAA</div>
-            <div class="loader-bar-bg">
-                <div id="loader-bar" class="loader-bar-fill"></div>
-            </div>
-            <div class="loader-status">
-                <span id="loader-text">LOADING CORE MODULES...</span>
-                <span id="loader-counter">0%</span>
-            </div>
-        </div>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-text">SYSTEM.INIT // MOHAMMED LEKRAA</div>
+      <div class="loader-bar-bg">
+        <div class="loader-bar-fill" id="loader-fill"></div>
+      </div>
+      <div class="loader-percentage" id="loader-counter">0%</div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <a href="#" class="nav-logo">MOHAMMED LEKRAA</a>
+    <div class="nav-links">
+      <a href="#about" class="nav-btn">01 ABOUT</a>
+      <a href="#projects" class="nav-btn">02 PROJECTS</a>
+      <a href="#contact" class="nav-btn">03 CONTACT</a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-left">
+      <span class="hero-intro">Hi, my name is</span>
+      <h1 class="hero-title">MOHAMMED<br>LEKRAA</h1>
+      <p class="hero-description">
+        Telecommunications Engineering student interested in <strong>Embedded Systems</strong>, <strong>Hardware</strong>, <strong>RF</strong>, and <strong>ADAS</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">VIEW PROJECTS ↓</a>
+      </div>
     </div>
 
-    <!-- NAVBAR CON TARJETAS / PASTILLAS -->
-    <header class="navbar">
-        <div class="logo">ML // 01</div>
-        <nav class="nav-cards">
-            <a href="#about" class="nav-card">
-                <span class="nav-num">01</span>
-                <span class="nav-label">ABOUT</span>
-            </a>
-            <a href="#projects" class="nav-card">
-                <span class="nav-num">02</span>
-                <span class="nav-label">PROJECTS</span>
-            </a>
-            <a href="#contact" class="nav-card">
-                <span class="nav-num">03</span>
-                <span class="nav-label">CONTACTO</span>
-            </a>
-        </nav>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="category-tag">
-                <span class="tag-line"></span> HOLA SOY
-            </div>
-            
-            <h1 class="main-title">
-                MOHAMMED<br>
-                <span class="outlined-text">LEKRAA</span>
-            </h1>
-
-            <p class="hero-subtitle">
-                <span class="sub-num">01 //</span> Estudiante de Ingeniería de Telecomunicaciones interesado en <strong>Sistemas Embebidos, Hardware y RF</strong>.
-            </p>
-
-            <div class="hero-actions">
-                <a href="#about" class="btn-primary">
-                    SOBRE MÍ <span class="btn-arrow">►</span>
-                </a>
-                <a href="#contact" class="btn-secondary">
-                    CONTACTO <span class="btn-arrow">↳</span>
-                </a>
-            </div>
+    <div class="hero-right">
+      <div class="portrait-card" id="tilt-card">
+        <div class="card-header">
+          <span class="mono-label">SYS_01</span>
+          <span class="mono-label">PORTRAIT</span>
         </div>
-
-        <div class="hero-image-wrapper">
-            <div class="image-card">
-                <div class="card-header-tags">
-                    <span>SYS_01</span>
-                    <span>PORTRAIT</span>
-                </div>
-                <div class="corner-bracket top-left"></div>
-                <div class="corner-bracket bottom-right"></div>
-                
-                <div class="portrait-container">
-                    <img src="tu-foto-sin-fondo.png" alt="Mohammed Lekraa" class="portrait-img">
-                </div>
-
-                <div class="card-footer-tags">
-                    <span class="footer-name">MOHAMMED LEKRAA</span>
-                    <span class="footer-status"><span class="status-dot"></span> ACTIVE SYSTEM</span>
-                </div>
-            </div>
+        <div class="card-image-container">
+          <!-- Reemplaza la URL por la ruta de tu foto/imagen -->
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop" alt="Hardware Engineering" class="card-img">
         </div>
-    </section>
-
-    <!-- ABOUT SECTION (REDISAEÑADO CON PÁRRAFOS A LA DERECHA) -->
-    <section id="about" class="section reveal">
-        <div class="about-grid-layout">
-            <div class="about-left-col">
-                <span class="section-number">[01] ABOUT</span>
-                <h2>WHO I AM</h2>
-            </div>
-            
-            <div class="about-right-col">
-                <p class="about-lead">
-                    I am a Telecommunications Engineering student with a strong passion for <strong>Embedded Systems</strong>, Hardware Design, and RF technologies.
-                </p>
-                <p>
-                    My core engineering focus is bridging physical hardware with low-level software. I design custom PCB layouts, develop firmware in C/C++, and implement real-time systems (FreeRTOS) to interface microcontrollers with sensors and communication protocols.
-                </p>
-                <p>
-                    I enjoy tackling challenging technical projects—from sensorized robotic peripherals to high-frequency wireless nodes—ensuring efficiency, reliability, and precision at every level of hardware-software integration.
-                </p>
-            </div>
+        <div class="card-footer">
+          <span class="mono-label">MOHAMMED LEKRAA</span>
+          <span class="status-indicator"><span class="dot"></span> ACTIVE SYSTEM</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </header>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="section reveal">
-        <div class="section-header">
-            <span class="section-number">[02] PROJECTS</span>
-            <h2>FEATURED PROJECTS</h2>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section reveal">
+    <h2 class="section-title">WHO I AM</h2>
+    <div class="about-grid">
+      <div class="about-lead">
+        <p>I am a Telecommunications Engineering student with a strong passion for <strong>Embedded Systems</strong>, <strong>Hardware Design</strong>, and <strong>RF technologies</strong>.</p>
+      </div>
+      <div class="about-body">
+        <p>My core engineering focus is bridging physical hardware with low-level software. I design custom PCB layouts, develop firmware in C/C++, and implement real-time systems (FreeRTOS) to interface microcontrollers with sensors and communication protocols.</p>
+        <p>I enjoy tackling challenging technical projects—from sensorized robotic peripherals to high-frequency wireless nodes—ensuring efficiency, reliability, and precision at every level of hardware-software integration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION (NUEVA SECCIÓN) -->
+  <section id="skills" class="section reveal">
+    <h2 class="section-title">TECHNICAL SKILLS</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>HARDWARE & RF</h3>
+        <ul>
+          <li>PCB Design (KiCad / Altium)</li>
+          <li>RF Systems (433MHz, BLE, LoRaWAN)</li>
+          <li>Hardware Debugging & Prototyping</li>
+          <li>Power Stage & Control Separation</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>EMBEDDED & FIRMWARE</h3>
+        <ul>
+          <li>C / C++ (Low-level Firmware)</li>
+          <li>ESP32 & STM32 Microcontrollers</li>
+          <li>FreeRTOS & Real-time Systems</li>
+          <li>Protocols: SPI, I2C, UART, CAN</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>SYSTEMS & TOOLS</h3>
+        <ul>
+          <li>ADAS Architectures & Perception</li>
+          <li>Oscilloscope & Logic Analyzer</li>
+          <li>Git / Version Control</li>
+          <li>Linux / Bare-Metal Environment</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section reveal">
+    <h2 class="section-title">FEATURED PROJECTS</h2>
+    <div class="projects-grid">
+
+      <!-- CARD 1 -->
+      <article class="project-card">
+        <div class="project-img-wrapper">
+          <span class="project-tag-top">PROJECT_01</span>
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Sensorized Glove">
         </div>
-
-        <div class="projects-grid">
-            <!-- PROJECT 1 -->
-            <article class="project-card glow-blue">
-                <div class="project-preview">
-                    <div class="card-header-tags">
-                        <span>PROJECT_01</span>
-                    </div>
-                    <div class="corner-bracket bottom-right"></div>
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1555680202-c86f0e12f086?q=80&w=600&auto=format&fit=crop" alt="Sensorized Glove">
-                    </div>
-                    <a href="#" class="view-project-overlay">VIEW PROJECT &gt;</a>
-                </div>
-                <div class="project-details">
-                    <div class="project-meta">
-                        <span class="project-id">001</span>
-                        <span class="project-category">EMBEDDED // FIRMWARE</span>
-                    </div>
-                    <h3>Sensorized Glove Controlled Robotic Arm</h3>
-                    <p>Sistema robótico capaz de reproducir los movimientos de la mano humana mediante un guante sensorizado, controladores embebidos, sensores inerciales y servomotores.</p>
-                    <div class="system-stack">
-                        <span>C/C++</span>
-                        <span>MPU6050</span>
-                        <span>FLEX SENSORS</span>
-                        <span>PCB</span>
-                        <span>SERVO CONTROL</span>
-                    </div>
-                    <a href="#" class="explore-btn">EXPLORAR PROYECTO ↗</a>
-                </div>
-            </article>
-
-            <!-- PROJECT 2 -->
-            <article class="project-card glow-orange featured">
-                <div class="project-preview orange-bg">
-                    <div class="card-header-tags">
-                        <span>PROJECT_02</span>
-                    </div>
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Power System">
-                    </div>
-                    <a href="#" class="view-project-overlay active">VIEW PROJECT &gt;</a>
-                </div>
-                <div class="project-details">
-                    <div class="project-meta">
-                        <span class="project-id">002</span>
-                        <span class="project-category">ELECTRONICS</span>
-                    </div>
-                    <h3>Power & Control System</h3>
-                    <p>Diseño electrónico enfocado en la separación de las etapas de potencia y control, reduciendo interferencias y optimizando la alimentación en sistemas embebidos.</p>
-                    <div class="system-stack">
-                        <span>PCB</span>
-                        <span>POWER</span>
-                        <span>ESP32</span>
-                        <span>SENSOR</span>
-                        <span>ISOLATION</span>
-                    </div>
-                    <a href="#" class="explore-btn">EXPLORAR PROYECTO ↗</a>
-                </div>
-            </article>
-
-            <!-- PROJECT 3 -->
-            <article class="project-card glow-blue">
-                <div class="project-preview">
-                    <div class="card-header-tags">
-                        <span>PROJECT_03</span>
-                    </div>
-                    <div class="corner-bracket bottom-right"></div>
-                    <div class="project-image-container">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=600&auto=format&fit=crop" alt="RF Control">
-                    </div>
-                    <a href="#" class="view-project-overlay">VIEW PROJECT &gt;</a>
-                </div>
-                <div class="project-details">
-                    <div class="project-meta">
-                        <span class="project-id">003</span>
-                        <span class="project-category">RF // EMBEDDED</span>
-                    </div>
-                    <h3>RF Communication & Embedded Control</h3>
-                    <p>Desarrollo de firmware y hardware para la adquisición de datos de sensores y transmisión inalámbrica de señales en tiempo real.</p>
-                    <div class="system-stack">
-                        <span>C / C++</span>
-                        <span>RF 433MHZ</span>
-                        <span>SENSORS</span>
-                        <span>FIRMWARE</span>
-                    </div>
-                    <a href="#" class="explore-btn">EXPLORAR PROYECTO ↗</a>
-                </div>
-            </article>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">001</span>
+            <span class="project-cat">EMBEDDED // FIRMWARE</span>
+          </div>
+          <h3 class="project-title">Sensorized Glove Controlled Robotic Arm</h3>
+          <p class="project-desc">Sistema robótico capaz de reproducir los movimientos de la mano humana mediante un guante sensorizado, controladores embebidos, sensores inerciales y servomotores.</p>
+          <div class="project-tags">
+            <span>C/C++</span>
+            <span>MPU6050</span>
+            <span>FLEX SENSORS</span>
+            <span>PCB</span>
+            <span>SERVO CONTROL</span>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="section reveal">
-        <div class="contact-grid">
-            <div class="contact-title">
-                <span class="section-number">[03] CONTACTO</span>
-                <h2>GET IN<br>TOUCH</h2>
-            </div>
-            <div class="contact-info">
-                <p>Abierto a oportunidades laborales, proyectos de sistemas embebidos y colaboraciones en desarrollo de hardware/RF.</p>
-                
-                <a href="mailto:contact@mlekraa.com" class="contact-email">
-                    <span>contact@mlekraa.com</span>
-                    <span>&rarr;</span>
-                </a>
-
-                <div class="contact-links">
-                    <a href="https://github.com" target="_blank">[ GITHUB ]</a>
-                    <a href="https://linkedin.com" target="_blank">[ LINKEDIN ]</a>
-                </div>
-            </div>
+      <!-- CARD 2 -->
+      <article class="project-card featured-card">
+        <div class="project-img-wrapper">
+          <span class="project-tag-top">PROJECT_02</span>
+          <div class="view-overlay"><span>VIEW PROJECT &gt;</span></div>
+          <img src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?q=80&w=800&auto=format&fit=crop" alt="Power & Control System">
         </div>
-    </section>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">002</span>
+            <span class="project-cat">ELECTRONICS</span>
+          </div>
+          <h3 class="project-title">Power & Control System</h3>
+          <p class="project-desc">Diseño electrónico enfocado en la separación de las etapas de potencia y control, reduciendo interferencias y optimizando la alimentación en sistemas embebidos.</p>
+          <div class="project-tags">
+            <span>PCB</span>
+            <span>POWER</span>
+            <span>ESP32</span>
+            <span>SENSOR</span>
+            <span>ISOLATION</span>
+          </div>
+        </div>
+      </article>
 
-    <!-- FOOTER -->
-    <footer>
-        <div>MOHAMMED LEKRAA &copy; 2026</div>
-        <div>ENGINEERING LAB // EMBEDDED & RF</div>
-    </footer>
+      <!-- CARD 3 -->
+      <article class="project-card">
+        <div class="project-img-wrapper">
+          <span class="project-tag-top">PROJECT_03</span>
+          <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=800&auto=format&fit=crop" alt="RF Communication">
+        </div>
+        <div class="project-info">
+          <div class="project-meta">
+            <span class="project-num">003</span>
+            <span class="project-cat">RF // EMBEDDED</span>
+          </div>
+          <h3 class="project-title">RF Communication & Embedded Control</h3>
+          <p class="project-desc">Desarrollo de firmware y hardware para la adquisición de datos de sensores y transmisión inalámbrica de señales en tiempo real.</p>
+          <div class="project-tags">
+            <span>C / C++</span>
+            <span>RF 433MHZ</span>
+            <span>SENSORS</span>
+            <span>FIRMWARE</span>
+          </div>
+        </div>
+      </article>
 
-    <script src="script.js"></script>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">GET IN TOUCH</h2>
+    <div class="contact-grid">
+      <div class="contact-text">
+        <p>Abierto a oportunidades laborales, proyectos de sistemas embebidos y colaboraciones en desarrollo de hardware/RF.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:contact@mlekraa.com" class="email-link">
+          contact@mlekraa.com <span class="arrow">→</span>
+        </a>
+        <div class="social-links">
+          <a href="#" target="_blank">[ GITHUB ]</a>
+          <a href="#" target="_blank">[ LINKEDIN ]</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>MOHAMMED LEKRAA © 2026</span>
+    <span>ENGINEERING LAB // EMBEDDED & RF</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
