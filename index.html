@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mohammed Lekraa // Engineering Portfolio</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -25,7 +24,7 @@
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <a href="#" class="nav-logo">MOHAMMED LEKRAA</a>
+    <a href="#" class="nav-logo">ML // PORTFOLIO</a>
     <div class="nav-links">
       <a href="#about" class="nav-btn">01 ABOUT</a>
       <a href="#projects" class="nav-btn">02 PROJECTS</a>
@@ -53,7 +52,6 @@
           <span class="mono-label">PORTRAIT</span>
         </div>
         <div class="card-image-container">
-          <!-- Reemplaza la URL por la ruta de tu foto/imagen -->
           <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=1000&auto=format&fit=crop" alt="Hardware Engineering" class="card-img">
         </div>
         <div class="card-footer">
@@ -64,21 +62,21 @@
     </div>
   </header>
 
-  <!-- ABOUT SECTION -->
+  <!-- ABOUT SECTION (LAYOUT CORREGIDO: TÍTULO IZQ / TEXTO DER) -->
   <section id="about" class="section reveal">
-    <h2 class="section-title">WHO I AM</h2>
     <div class="about-grid">
-      <div class="about-lead">
-        <p>I am a Telecommunications Engineering student with a strong passion for <strong>Embedded Systems</strong>, <strong>Hardware Design</strong>, and <strong>RF technologies</strong>.</p>
+      <div class="about-left">
+        <h2 class="section-title">WHO I AM</h2>
       </div>
-      <div class="about-body">
-        <p>My core engineering focus is bridging physical hardware with low-level software. I design custom PCB layouts, develop firmware in C/C++, and implement real-time systems (FreeRTOS) to interface microcontrollers with sensors and communication protocols.</p>
-        <p>I enjoy tackling challenging technical projects—from sensorized robotic peripherals to high-frequency wireless nodes—ensuring efficiency, reliability, and precision at every level of hardware-software integration.</p>
+      <div class="about-right">
+        <p class="about-lead">I am a Telecommunications Engineering student with a strong passion for <strong>Embedded Systems</strong>, <strong>Hardware Design</strong>, and <strong>RF technologies</strong>.</p>
+        <p class="about-body">My core engineering focus is bridging physical hardware with low-level software. I design custom PCB layouts, develop firmware in C/C++, and implement real-time systems (FreeRTOS) to interface microcontrollers with sensors and communication protocols.</p>
+        <p class="about-body">I enjoy tackling challenging technical projects—from sensorized robotic peripherals to high-frequency wireless nodes—ensuring efficiency, reliability, and precision at every level of hardware-software integration.</p>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS SECTION (NUEVA SECCIÓN) -->
+  <!-- SKILLS SECTION -->
   <section id="skills" class="section reveal">
     <h2 class="section-title">TECHNICAL SKILLS</h2>
     <div class="skills-grid">
@@ -112,7 +110,7 @@
     </div>
   </section>
 
-  <!-- PROJECTS SECTION -->
+  <!-- FEATURED PROJECTS (RESTAURADO EXACTO A FOTO 2) -->
   <section id="projects" class="section reveal">
     <h2 class="section-title">FEATURED PROJECTS</h2>
     <div class="projects-grid">
@@ -121,6 +119,7 @@
       <article class="project-card">
         <div class="project-img-wrapper">
           <span class="project-tag-top">PROJECT_01</span>
+          <div class="view-overlay"><span>VIEW PROJECT &gt;</span></div>
           <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=800&auto=format&fit=crop" alt="Sensorized Glove">
         </div>
         <div class="project-info">
@@ -137,11 +136,12 @@
             <span>PCB</span>
             <span>SERVO CONTROL</span>
           </div>
+          <a href="#" class="project-link">EXPLORAR PROYECTO ↗</a>
         </div>
       </article>
 
       <!-- CARD 2 -->
-      <article class="project-card featured-card">
+      <article class="project-card">
         <div class="project-img-wrapper">
           <span class="project-tag-top">PROJECT_02</span>
           <div class="view-overlay"><span>VIEW PROJECT &gt;</span></div>
@@ -161,6 +161,7 @@
             <span>SENSOR</span>
             <span>ISOLATION</span>
           </div>
+          <a href="#" class="project-link">EXPLORAR PROYECTO ↗</a>
         </div>
       </article>
 
@@ -168,6 +169,7 @@
       <article class="project-card">
         <div class="project-img-wrapper">
           <span class="project-tag-top">PROJECT_03</span>
+          <div class="view-overlay"><span>VIEW PROJECT &gt;</span></div>
           <img src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?q=80&w=800&auto=format&fit=crop" alt="RF Communication">
         </div>
         <div class="project-info">
@@ -183,6 +185,7 @@
             <span>SENSORS</span>
             <span>FIRMWARE</span>
           </div>
+          <a href="#" class="project-link">EXPLORAR PROYECTO ↗</a>
         </div>
       </article>
 
