@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohammed Lekraa — Embedded & RF Portfolio</title>
+    <title>Mohammed Lekraa — Engineering Portfolio</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,13 +28,22 @@
         </div>
     </div>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR CON TARJETAS / PASTILLAS -->
     <header class="navbar">
         <div class="logo">ML // 01</div>
-        <nav>
-            <a href="#about"><span>01</span> ABOUT</a>
-            <a href="#projects"><span>02</span> PROJECTS</a>
-            <a href="#contact"><span>03</span> CONTACTO</a>
+        <nav class="nav-cards">
+            <a href="#about" class="nav-card">
+                <span class="nav-num">01</span>
+                <span class="nav-label">ABOUT</span>
+            </a>
+            <a href="#projects" class="nav-card">
+                <span class="nav-num">02</span>
+                <span class="nav-label">PROJECTS</span>
+            </a>
+            <a href="#contact" class="nav-card">
+                <span class="nav-num">03</span>
+                <span class="nav-label">CONTACTO</span>
+            </a>
         </nav>
     </header>
 
@@ -54,7 +63,6 @@
                 <span class="sub-num">01 //</span> Estudiante de Ingeniería de Telecomunicaciones interesado en <strong>Sistemas Embebidos, Hardware y RF</strong>.
             </p>
 
-            <!-- CAJITAS DE ACCIÓN -->
             <div class="hero-actions">
                 <a href="#about" class="btn-primary">
                     SOBRE MÍ <span class="btn-arrow">►</span>
@@ -65,7 +73,6 @@
             </div>
         </div>
 
-        <!-- FOTO COMPLETA SIN FONDO -->
         <div class="hero-image-wrapper">
             <div class="image-card">
                 <div class="card-header-tags">
@@ -76,7 +83,6 @@
                 <div class="corner-bracket bottom-right"></div>
                 
                 <div class="portrait-container">
-                    <!-- Sustituye esta ruta por la de tu foto PNG sin fondo -->
                     <img src="tu-foto-sin-fondo.png" alt="Mohammed Lekraa" class="portrait-img">
                 </div>
 
@@ -88,20 +94,24 @@
         </div>
     </section>
 
-    <!-- ABOUT SECTION (EN INGLÉS) -->
+    <!-- ABOUT SECTION (REDISAEÑADO CON PÁRRAFOS A LA DERECHA) -->
     <section id="about" class="section reveal">
-        <div class="section-header">
-            <span class="section-number">[01] ABOUT</span>
-            <h2>WHO I AM</h2>
-        </div>
-        
-        <div class="about-grid">
-            <div class="about-large">
-                <p>Telecommunications Engineering student focused on <strong>Embedded Systems</strong>, Hardware Design, and RF technologies.</p>
+        <div class="about-grid-layout">
+            <div class="about-left-col">
+                <span class="section-number">[01] ABOUT</span>
+                <h2>WHO I AM</h2>
             </div>
-            <div class="about-text">
-                <p>I specialize in building complete hardware-firmware solutions. From designing custom PCB layouts to developing low-level drivers in C/C++ and working with real-time operating systems (FreeRTOS).</p>
-                <p>My goal is to bridge the gap between physical signals, RF communication, and embedded processing to create reliable, testable systems for real-world applications.</p>
+            
+            <div class="about-right-col">
+                <p class="about-lead">
+                    I am a Telecommunications Engineering student with a strong passion for <strong>Embedded Systems</strong>, Hardware Design, and RF technologies.
+                </p>
+                <p>
+                    My core engineering focus is bridging physical hardware with low-level software. I design custom PCB layouts, develop firmware in C/C++, and implement real-time systems (FreeRTOS) to interface microcontrollers with sensors and communication protocols.
+                </p>
+                <p>
+                    I enjoy tackling challenging technical projects—from sensorized robotic peripherals to high-frequency wireless nodes—ensuring efficiency, reliability, and precision at every level of hardware-software integration.
+                </p>
             </div>
         </div>
     </section>
@@ -115,7 +125,7 @@
 
         <div class="projects-grid">
             <!-- PROJECT 1 -->
-            <article class="project-card glow-cyan">
+            <article class="project-card glow-blue">
                 <div class="project-preview">
                     <div class="card-header-tags">
                         <span>PROJECT_01</span>
@@ -144,14 +154,14 @@
                 </div>
             </article>
 
-            <!-- PROJECT 2 (DESTACADO EN NARANJA) -->
+            <!-- PROJECT 2 -->
             <article class="project-card glow-orange featured">
                 <div class="project-preview orange-bg">
                     <div class="card-header-tags">
                         <span>PROJECT_02</span>
                     </div>
                     <div class="project-image-container">
-                        <!-- Espacio de presentación o imagen -->
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?q=80&w=600&auto=format&fit=crop" alt="Power System">
                     </div>
                     <a href="#" class="view-project-overlay active">VIEW PROJECT &gt;</a>
                 </div>
@@ -174,7 +184,7 @@
             </article>
 
             <!-- PROJECT 3 -->
-            <article class="project-card glow-cyan">
+            <article class="project-card glow-blue">
                 <div class="project-preview">
                     <div class="card-header-tags">
                         <span>PROJECT_03</span>
